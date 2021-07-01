@@ -115,6 +115,9 @@ class MainActivity : AppCompatActivity() {
         Log.d("kotlintest", "犬の年齢は" + bigdog.age + "歳です。")
 
 
+        val dog_move = Dog("ポチ", 3)      // 名前をポチ、年齢3歳で、Dogのインスタンスを作る
+        dog_move.move()
+
 
     }
 
