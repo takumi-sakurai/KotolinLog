@@ -2,20 +2,13 @@ package jp.techacademy.takumi.sakurai.kotolinlog
 
 import android.util.Log
 
-open class Dog {
-
-    //プロパティ
-    var name: String
-    var age: Int
-
+open class Dog: Animal {
     //コンストラクタ
-    constructor(name: String, age: Int){
-        this.name = name
-        this.age = age
+    constructor(name: String, age: Int): super(name,age){
     }
 
-    //メソッド
-    open fun say(){
+    // Animalクラスのメソッドをオーバーライド
+    override fun say(){
         Log.d(MY_TAG, this.name + "(" + this.age + "歳)" + "　「ワンワン」")
     }
 }
