@@ -17,24 +17,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val dog = Dog("mike",8)
-        dog.say()
-        val cat = Cat("milk",8)
-        cat.say()
+        val mother = Human("ミサエ", 32, "裁縫")
+        val father = Human("ヒロシ", 36, "サーフィン")
 
-        Log.d(MY_TAG, "うちの犬の名前は" + dog.name + "で猫の歳は" + cat.age + "歳です")
-
-        val sheep = Sheep("Li",5)
-        sheep.say()
-        Sheep.introduce()
-        Log.d(MY_TAG, Sheep.to_jp + "のクラス変数です。")
-
-        //クラスの継承
-        val bigdog = BigDog("ヨーゼフ", 15)
-        bigdog.say()
-
-        //インターフェイス
-        dog.move()
+        mother.say()
+        mother.think()
+        father.say()
+        father.think()
     }
-
 }
