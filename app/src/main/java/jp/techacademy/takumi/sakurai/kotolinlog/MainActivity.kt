@@ -33,6 +33,8 @@ class MainActivity : AppCompatActivity() {
         val bigdog = BigDog("ヨーゼフ", 15)
         bigdog.say()
 
+        //インターフェイス
+        dog.move()
     }
 
 }
